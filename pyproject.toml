@@ -1,0 +1,24 @@
+[project]
+name = "weather-pipeline"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "jaoAprendiz", email = "joaosoave94@gmail.com" }
+]
+requires-python = ">=3.15"
+dependencies = [
+    "apache-airflow>=3.4.0",
+    "pandas>=3.1.1",
+    "psycopg2-binary>=2.9.13",
+    "python-dotenv>=1.2.4",
+    "requests>=2.34.2",
+    "sqlalchemy>=2.1.9",
+]
+
+[project.scripts]
+weather-pipeline = "weather_pipeline:main"
+
+[build-system]
+requires = ["uv_build>=0.13.7,<0.14.0"]
+build-backend = "uv_build"

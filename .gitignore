@@ -1,0 +1,41 @@
+# ===== Python =====
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+
+# ===== Ambientes virtuais =====
+.venv/
+venv/
+
+# ===== Segredos e variáveis de ambiente =====
+.env
+config/.env
+!.env.example
+!config/.env.example
+
+# ===== Airflow (gerados em runtime) =====
+logs/
+plugins/
+config/airflow.cfg
+airflow.db
+standalone_admin_password.txt
+
+# ===== Dados gerados pelo pipeline =====
+data/*
+!data/.gitkeep
+
+# ===== Notebooks =====
+.ipynb_checkpoints/
+
+# ===== Ferramentas =====
+.ruff_cache/
+.pytest_cache/
+.mypy_cache/
+
+# ===== Editores e SO =====
+.vscode/
+.idea/
+.DS_Store
