@@ -75,7 +75,7 @@ weather-pipeline/
 **1. Clone o repositório**
 
 ```bash
-git clone <url-do-repositorio>
+git clone https://github.com/jaoAprendiz/weather-pipeline.git
 cd weather-pipeline
 ```
 
